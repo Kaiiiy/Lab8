@@ -45,12 +45,48 @@ public class CustomList extends ArrayAdapter<City> {
 
     }
 
+    /**
+     * this adds a city object to the list
+     *the second phase, you can add the city
+     * @param city
+     */
+
+    /**
+     * this gets size of the list
+     * @return
+     */
     public int getCount(){
         return cities.size();
     }
-
+    /**
+     * this adds a city object to the list
+     *for the first phase it will be empty
+     * @param city
+     */
     public void addCity(City city){
-
+        cities.add(city);
     }
 
+    public boolean hasCity(City city){
+//        if (cities.contains(city)) {
+//            return true;
+//        }
+//
+//        return false;
+    }
+
+//    public void delete(City city){
+//        if (cities.contains(city)) {
+//            cities.remove(city);
+//        }
+//        else{
+//            throw new IllegalArgumentException();
+//        }
+//    }
+//
+//    public int countCities(){
+//
+//        return cities.size();
+//
+//    }
 }
