@@ -46,26 +46,26 @@ public class CustomListTest {
 //
 //    }
 
-    @Test
-    void testremoveCity(){
-        list = MockCityList();
-        City city = new City("Yellowknife", "Northwest Territories");
-        list.addCity(city);
-        assertEquals(1, list.getCount());
-        list.delete(city);
-        assertEquals(0, list.getCount());
-    }
-//
-//
 //    @Test
-//    void testcountCity(){
+//    void testremoveCity(){
 //        list = MockCityList();
-//        assertEquals(0, list.countCities());
 //        City city = new City("Yellowknife", "Northwest Territories");
 //        list.addCity(city);
-//        assertEquals(1, list.countCities());
-//        City cit1y = new City("Regina", "Saskatchewan");
-//        list.addCity(cit1y);
-//        assertEquals(2, list.countCities());
+//        assertEquals(1, list.getCount());
+//        list.delete(city);
+//        assertEquals(0, list.getCount());
 //    }
+//
+//
+    @Test
+    void testcountCity(){
+        list = MockCityList();
+        assertEquals(0, list.countCities());
+        City city = new City("Yellowknife", "Northwest Territories");
+        list.addCity(city);
+        assertEquals(1, list.countCities());
+        City cit1y = new City("Regina", "Saskatchewan");
+        list.addCity(cit1y);
+        assertEquals(2, list.countCities());
+    }
 }
